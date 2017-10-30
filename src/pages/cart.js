@@ -3,8 +3,9 @@ import '../App.css';
 
 export default () => {
   return (
-    <div container="container">
-      <p>Cart Component</p>
+    <div className="jumbotron">
+      <h1 className="display-3">Shopping Cart</h1>
+      <p className="lead">Add some groceries to start.</p>
     </div>
   )
 }

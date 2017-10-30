@@ -3,8 +3,8 @@ import '../App.css';
 
 export default () => {
   return (
-    <div container="container">
-      <p>NotFound - Test</p>
+    <div className="jumbotron">
+      <h1 className="display-3">Oops! Page not found. </h1>
     </div>
   )
 }

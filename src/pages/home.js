@@ -1,4 +1,10 @@
 import React from 'react'
+import farm from '../farm.jpg'
+import bananas from '../bananas.jpg'
+import fruit from '../fruit-sm.jpeg'
+import meat from '../meat-sm.jpeg'
+import veggie from '../veggie-sm.jpeg'
+import freshlocal from '../fresh-local.jpg'
 
 export default () => {
   return (
@@ -13,23 +19,30 @@ export default () => {
             <li data-target="#myCarousel" data-slide-to="2"></li>
           </ol>
           <div className="carousel-inner">
-            <div className="carousel-item active">
-              <img className="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide" />
+          <div className="carousel-item active">
+              <img className="first-slide" src={farm} alt="Always fresh. Always local." />
               <div className="container">
-                <div className="carousel-caption text-left">
-                  <h1>Example headline.</h1>
-                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                  <p><a className="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                <div className="carousel-caption">
+                  <h1>M + T Grociers</h1>
+                  <p>Your local provider for responsibly sourced produce, meat, and seafood.</p>
                 </div>
               </div>
             </div>
             <div className="carousel-item">
-              <img className="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide"/>
+              <img className="first-slide" src={freshlocal} alt="Always fresh. Always local." />
               <div className="container">
                 <div className="carousel-caption">
-                  <h1>Another example headline.</h1>
-                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                  <p><a className="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                  <h1>Always fresh. Always local. Always M + T.</h1>
+                  <p>We only carry the freshest fruits, vegetables, and meats from local growers and farmers.</p>
+                </div>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <img className="second-slide" src={bananas} alt=""/>
+              <div className="container">
+                <div className="carousel-caption">
+                  <h1>Quality is in our DNA.</h1>
+                  <p>The M + T Grociers family is committed to bringing you the best farm-to-table experience. Feel good about what you eat.</p>
                 </div>
               </div>
             </div>
@@ -50,72 +63,23 @@ export default () => {
   
           <div className="row">
             <div className="col-lg-4">
-              <img className="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140"/>
-              <h2>Heading</h2>
-              <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-              <p><a className="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+              <img className="rounded-circle" src={fruit} alt="Juicy Fruits" width="140" height="140"/>
+              <h2>Juicy Fruits</h2>
+              <p>Come try our local raspberries, strawberries, and all of your other favorites along with our large selection of exotic fruits. Ever try a durian?</p>
             </div>
             <div className="col-lg-4">
-              <img className="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140"/>
-              <h2>Heading</h2>
-              <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-              <p><a className="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+              <img className="rounded-circle" src={meat} alt="Prime-Choice Meats" width="140" height="140"/>
+              <h2>Prime-Choice Meats</h2>
+              <p>Our in-house butchers </p>
             </div>
             <div className="col-lg-4">
-              <img className="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140"/>
-              <h2>Heading</h2>
+              <img className="rounded-circle" src={veggie} alt="Crisp Vegetables" width="140" height="140"/>
+              <h2>Crisp Vegetables</h2>
               <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-              <p><a className="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
             </div>
           </div>
-  
-  
-  
-          <hr className="featurette-divider" />
-  
-          <div className="row featurette">
-            <div className="col-md-7">
-              <h2 className="featurette-heading">First featurette heading. <span className="text-muted">It'll blow your mind.</span></h2>
-              <p className="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-            </div>
-            <div className="col-md-5">
-              <img className="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image"/>
-            </div>
-          </div>
-  
-          <hr className="featurette-divider" />
-  
-          <div className="row featurette">
-            <div className="col-md-7 order-md-2">
-              <h2 className="featurette-heading">Oh yeah, it's that good. <span className="text-muted">See for yourself.</span></h2>
-              <p className="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-            </div>
-            <div className="col-md-5 order-md-1">
-              <img className="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image"/>
-            </div>
-          </div>
-  
-          <hr className="featurette-divider" />
-  
-          <div className="row featurette">
-            <div className="col-md-7">
-              <h2 className="featurette-heading">And lastly, this one. <span className="text-muted">Checkmate.</span></h2>
-              <p className="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-            </div>
-            <div className="col-md-5">
-              <img className="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image"/>
-            </div>
-          </div>
-  
-          <hr className="featurette-divider" />
-  
-  
+    
         </div>
-  
-        <footer className="container">
-          <p className="float-right"><a href="#">Back to top</a></p>
-          <p>&copy; 2017 M + T Grociers, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-        </footer>
   
       </main>
       </div>
