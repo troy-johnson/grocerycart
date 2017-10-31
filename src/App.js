@@ -7,6 +7,7 @@ import home from './pages/home'
 import products from './pages/products'
 import cart from './pages/cart'
 import notfound from './pages/notfound'
+import productdetail from './pages/productdetail'
 
 class App extends Component {
   render() {
@@ -42,6 +43,7 @@ class App extends Component {
             <Switch>
               <Route exact path='/' component={home} />
               <Route path='/products' component={products} />
+              <Route path='/products/:id' component={productdetail} />
               <Route path='/cart' component={cart} />
               <Route component={notfound} />
             </Switch>

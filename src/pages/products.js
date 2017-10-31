@@ -20,7 +20,7 @@ class Products extends Component {
             <div>
               <img className="card-img-top" src={grocery.image} alt={grocery.name} />
               <h4 className="card-title">{grocery.name}</h4>
-              <p>Price: ${grocery.price} Stock: {grocery.inStock}</p>
+              <p>Price: ${grocery.price} Stock: {grocery.inStock} ID: {grocery.id}</p>
               <a href="#" class="btn btn-primary">Add to cart</a>
             </div>
           </div>
