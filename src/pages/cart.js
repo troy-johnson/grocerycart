@@ -1,6 +1,8 @@
 import React from 'react'
 import '../App.css';
 
+import * as Cart from '../configuration/cart'
+
 export default () => {
   return (
     <div className="jumbotron">

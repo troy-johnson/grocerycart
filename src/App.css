@@ -3,5 +3,11 @@ div.carousel-inner img {
 }
 
 .jumbotron {
-  margin-top:55px;
+  margin-top: 55px;
+}
+
+.card {
+  width: 20rem;
+  padding: 10px 10px 10px 10px;
+  margin: 10px 10px 10px 10px;
 }
