@@ -12,20 +12,31 @@ class Products extends Component {
     const { loading, allGroceries } = this.props.data
 
     return (
-      <div className="jumbotron container-fluid">
-        <h1 className="display-3">Product Listing</h1>
-        <p className="lead">This is a complete listing of our fresh, locally grown produce and prime-choice meat we have in stock.</p>
-        {!loading && allGroceries.map(grocery => (
-          <div key={grocery.id} className="card">
-            <div>
-              <img className="card-img-top" src={grocery.image} alt={grocery.name} />
-              <h4 className="card-title">{grocery.name}</h4>
-              <p>Price: ${grocery.price} Stock: {grocery.inStock} ID: {grocery.id}</p>
-              <a href="#" class="btn btn-primary">Add to cart</a>
-            </div>
-          </div>
+      <div className='jumbotron container-fluid'>
+        <div>
+            <h1 className='display-3'>Product Listing</h1>
+            <p className='lead'>This is a complete listing of our fresh, locally grown produce and prime-choice meat we have in stock.</p>
+        </div>
+        <div className='row justify-content-center'>
+          {!loading && allGroceries.map(grocery => (
+            <div key={grocery.id} className='card'>
+              <div>
+                <a href={'/products/' + grocery.id}><img className='card-img-top' src={grocery.image} alt={grocery.name} /></a>
+                <h4 className='card-title'>{grocery.name}</h4>
+                <p>Price: ${grocery.price} Stock: {grocery.inStock}</p>
+                <div className='row justify-content-around'>
+                  <div className='col'>
+                    <a href={'/products/' + grocery.id} className='btn btn-info'>More Information</a>
+                  </div>
+                  <div className='col'>
+                    <a href='#' className='btn btn-primary'>Add to cart</a>
+                  </div>
+                </div>  
+              </div>
+            </div>   
         ))}
       </div>
+    </div>  
     )
   }
 }

@@ -6,6 +6,10 @@ div.carousel-inner img {
   margin-top: 55px;
 }
 
+img.card-img-top {
+  height:300px;
+}
+
 .card {
   width: 20rem;
   padding: 10px 10px 10px 10px;

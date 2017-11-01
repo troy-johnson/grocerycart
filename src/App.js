@@ -15,7 +15,7 @@ class App extends Component {
       <div>
       <header>
         <nav id="top" className="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
-          <a className="navbar-brand" href="/">M + T Grociers</a>
+          <a className="navbar-brand" href="/">MT Grociers</a>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -42,14 +42,14 @@ class App extends Component {
         <Router>
             <Switch>
               <Route exact path='/' component={home} />
-              <Route path='/products' component={products} />
-              <Route path='/products/:id' component={productdetail} />
+              <Route exact path='/products' component={products} />
+              <Route path='/products/:uniqueId' component={productdetail} />
               <Route path='/cart' component={cart} />
               <Route component={notfound} />
             </Switch>
         </Router>
         <footer className="container">
-          <p>&copy; 2017 M + T Grociers, Inc. &middot; <a href="/">Privacy</a> &middot; <a href="/">Terms</a></p>
+          <p>&copy; 2017 MT Grociers, Inc.</p>
         </footer>
       </div>
     </div>

@@ -23,7 +23,7 @@ export default () => {
               <img className="first-slide" src={farm} alt="Always fresh. Always local." />
               <div className="container">
                 <div className="carousel-caption">
-                  <h1>M + T Grociers</h1>
+                  <h1>MT Grociers</h1>
                   <p>Your local provider for responsibly sourced produce, meat, and seafood.</p>
                 </div>
               </div>
@@ -32,7 +32,7 @@ export default () => {
               <img className="first-slide" src={freshlocal} alt="Always fresh. Always local." />
               <div className="container">
                 <div className="carousel-caption">
-                  <h1>Always fresh. Always local. Always M + T.</h1>
+                  <h1>Always fresh. Always local. Always MT.</h1>
                   <p>We only carry the freshest fruits, vegetables, and meats from local growers and farmers.</p>
                 </div>
               </div>
@@ -42,7 +42,7 @@ export default () => {
               <div className="container">
                 <div className="carousel-caption">
                   <h1>Quality is in our DNA.</h1>
-                  <p>The M + T Grociers family is committed to bringing you the best farm-to-table experience. Feel good about what you eat.</p>
+                  <p>The MT Grociers family is committed to bringing you the best farm-to-table experience. Feel good about what you eat.</p>
                 </div>
               </div>
             </div>
