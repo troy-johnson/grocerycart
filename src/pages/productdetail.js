@@ -36,20 +36,8 @@ class ProductDetail extends Component {
     }
   }
 
-  // const QUERY = gql`
-  // query {
-  //   allGroceries {
-  //     id
-  //     foodType
-  //     name
-  //     image
-  //     inStock
-  //     price
-  //   }
-  // }
-  // `
   const QUERY = gql`
-  query {
+  query AllGroceries($id: ID!) {
     allGroceries {
       id
       foodType
@@ -62,8 +50,21 @@ class ProductDetail extends Component {
   }
   `
 
-export default graphql(QUERY, {
-  options: props => ({
+  const QUERY2 = gql`
+  query allGroceries($id: ID!) {
+    allGroceries(filter: {
+      grocery: {
+        id: $id
+      }
+    }) {
+      id
+      text
+    }
+  }
+`
+
+export default graphql(QUERY2, {
+  options: (props) => ({
     variables: {
       id: props.match.params.url
     }
