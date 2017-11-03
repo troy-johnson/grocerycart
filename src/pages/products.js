@@ -29,7 +29,7 @@ class Products extends Component {
                     <a href={'/products/' + grocery.id} className='btn btn-info'>More Information</a>
                   </div>
                   <div className='col'>
-                    <a href='#' className='btn btn-primary'>Add to cart</a>
+                    <a href='/cart' className='btn btn-primary'>Add to cart</a>
                   </div>
                 </div>  
               </div>
@@ -53,5 +53,4 @@ query {
   }
 }
 `
-
 export default graphql(QUERY)(Products)

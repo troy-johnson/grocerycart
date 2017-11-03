@@ -9,24 +9,22 @@ class ProductDetail extends Component {
     render() {
   
       const { loading, allGroceries } = this.props.data
-  
+      
       return (
         <div className="jumbotron container-fluid">
           <h1 className="display-3">Product Detail</h1>
-          <p className="lead">test:</p>
           <div>
           {!loading && allGroceries.map(grocery => (
             <div key={grocery.id} className='card'>
               <div>
-                <a href={'/products/' + grocery.id}><img className='card-img-top' src={grocery.image} alt={grocery.name} /></a>
+                <img className='card-img-top' src={grocery.image} alt={grocery.name} />
                 <h4 className='card-title'>{grocery.name}</h4>
+                <p className="lead">ID:{this.props.match.params.url}</p>
                 <p>Price: ${grocery.price} Stock: {grocery.inStock}</p>
+                <p>{grocery.description}</p>
                 <div className='row justify-content-around'>
                   <div className='col'>
-                    <a href={'/products/' + grocery.id} className='btn btn-info'>More Information</a>
-                  </div>
-                  <div className='col'>
-                    <a href='#' className='btn btn-primary'>Add to cart</a>
+                    <a href='/cart' className='btn btn-primary'>Add to cart</a>
                   </div>
                 </div>  
               </div>
@@ -38,16 +36,36 @@ class ProductDetail extends Component {
     }
   }
 
-const QUERY = gql`
-query {
-  allGroceries {
-    id
-    foodType
-    name
-    image
-    inStock
-    price
+  // const QUERY = gql`
+  // query {
+  //   allGroceries {
+  //     id
+  //     foodType
+  //     name
+  //     image
+  //     inStock
+  //     price
+  //   }
+  // }
+  // `
+  const QUERY = gql`
+  query {
+    allGroceries {
+      id
+      foodType
+      name
+      image
+      description
+      inStock
+      price
+    }
   }
-}
-`
-export default graphql(QUERY)(ProductDetail)
+  `
+
+export default graphql(QUERY, {
+  options: props => ({
+    variables: {
+      id: props.match.params.url
+    }
+  })
+})(ProductDetail)
