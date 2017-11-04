@@ -70,12 +70,12 @@ export default () => {
             <div className="col-lg-4">
               <img className="rounded-circle" src={meat} alt="Prime-Choice Meats" width="140" height="140"/>
               <h2>Prime-Choice Meats</h2>
-              <p>Our in-house butchers </p>
+              <p>Prime roasts and steaks are excellent for dry-heat cooking such as broiling, roasting or grilling. All natural fresh chicken breasts.</p>
             </div>
             <div className="col-lg-4">
               <img className="rounded-circle" src={veggie} alt="Crisp Vegetables" width="140" height="140"/>
               <h2>Crisp Vegetables</h2>
-              <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+              <p>Farmers Market quality without the crowd.</p>
             </div>
           </div>
     

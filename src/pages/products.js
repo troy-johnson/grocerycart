@@ -53,4 +53,5 @@ query {
   }
 }
 `
+
 export default graphql(QUERY)(Products)
