@@ -11,8 +11,7 @@ class ProductDetail extends Component {
 
       const { loading, Grocery } = this.props.data
       return !loading && (
-        <div className='card'>
-        
+        <div className='card'>  
         <div>
           <img className='card-img-top' src={Grocery.image} alt={Grocery.name} />
           <h4 className='card-title'>{Grocery.name}</h4>
@@ -51,6 +50,8 @@ console.log(this.props.data)
   query ($id: ID!) {
     Grocery (id: $id) {
       id
+      image
+      description
       foodType
       name
       inStock
@@ -58,19 +59,6 @@ console.log(this.props.data)
     }
   }
   `
-
-  const QUERY2 = gql`
-  query Grocery($id: ID!) {
-    Grocery(filter: {
-      Grocery: {
-        id: $id
-      }
-    }) {
-      id
-      text
-    }
-  }
-`
 
 export default graphql(QUERY, {
   options: (props) => ({
