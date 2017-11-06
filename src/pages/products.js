@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import '../App.css';
-
+import * as Cart from '../configuration/cart'
 import { graphql } from 'react-apollo'
-
 import gql from 'graphql-tag'
 
 
@@ -29,7 +28,7 @@ class Products extends Component {
                     <a href={'/products/' + grocery.id} className='btn btn-info'>More Information</a>
                   </div>
                   <div className='col'>
-                    <a href='/cart' className='btn btn-primary'>Add to cart</a>
+                    <button type="button" class="btn btn-primary" onClick={() =>{Cart.addCart(grocery.name,[grocery.price,'quantity'])}}>Add to cart</button>
                   </div>
                 </div>  
               </div>

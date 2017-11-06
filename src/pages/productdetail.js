@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import '../App.css'
-
+import * as Cart from '../configuration/cart'
 import { graphql } from 'react-apollo'
-
 import gql from 'graphql-tag'
 
 class ProductDetail extends Component {
@@ -20,7 +19,7 @@ class ProductDetail extends Component {
           <p>{Grocery.description}</p>
           <div className='row justify-content-around'>
             <div className='col'>
-              <a href='/cart' className='btn btn-primary'>Add to cart</a>
+              <button type="button" class="btn btn-primary" onClick={() =>{Cart.addCart(Grocery.name,[Grocery.price,'quantity'])}}>Add to cart</button>
             </div>
           </div>  
         </div>
