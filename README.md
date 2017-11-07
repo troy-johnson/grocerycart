@@ -1,6 +1,6 @@
 This is a team project created for Helio Training.
 
-## Frameworks
+## Frameworks/Libraries
 - ReactJS
 - Bootstrap
 - GraphQL
