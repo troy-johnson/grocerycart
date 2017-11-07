@@ -1,12 +1,11 @@
 This is a team project created for Helio Training using the following:
 
-ReactJS
-Bootstrap
-GraphQL
-Apollo
+- ReactJS
+- Bootstrap
+- GraphQL
+- Apollo
 
+## Contributors are:
 
-Contributors are:
-
-Troy Johnson (https://github.com/troy-johnson)
-Misty Christiansen (https://github.com/mistychris6)
+- Troy Johnson (https://github.com/troy-johnson)
+- Misty Christiansen (https://github.com/mistychris6)
