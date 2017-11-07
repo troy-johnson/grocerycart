@@ -8,5 +8,6 @@ This is a team project created for Helio Training.
 - <a href="https://www.apollographql.com/">Apollo</a>
 
 ## Contributors
-- <a href="https://github.com/troy-johnson">Troy Johnson</a>
 - <a href="https://github.com/mistychris6">Misty Christiansen</a>
+- <a href="https://github.com/troy-johnson">Troy Johnson</a>
+
