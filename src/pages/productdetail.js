@@ -14,12 +14,12 @@ class ProductDetail extends Component {
         <div>
           <img className='card-img-top' src={Grocery.image} alt={Grocery.name} />
           <h4 className='card-title'>{Grocery.name}</h4>
-          <p className="lead">ID:{this.props.match.params.url}</p>
+          {/* <p className="lead">ID:{this.props.match.params.url}</p> */}
           <p>Price: ${Grocery.price} Stock: {Grocery.inStock}</p>
           <p>{Grocery.description}</p>
           <div className='row justify-content-around'>
             <div className='col'>
-              <button type="button" class="btn btn-primary" onClick={() =>{Cart.addCart(Grocery.name,[Grocery.price,'quantity'])}}>Add to cart</button>
+              <button type="button" className="btn btn-primary" onClick={() =>{Cart.addCart(Grocery.name,Grocery.price)}}>Add to cart</button>
             </div>
           </div>  
         </div>

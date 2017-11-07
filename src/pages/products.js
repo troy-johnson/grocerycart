@@ -28,7 +28,7 @@ class Products extends Component {
                     <a href={'/products/' + grocery.id} className='btn btn-info'>More Information</a>
                   </div>
                   <div className='col'>
-                    <button type="button" class="btn btn-primary" onClick={() =>{Cart.addCart(grocery.name,[grocery.price,'quantity'])}}>Add to cart</button>
+                    <button type="button" class="btn btn-primary" onClick={() =>{Cart.addCart(grocery.name,grocery.price)}}>Add to cart</button>
                   </div>
                 </div>  
               </div>
